@@ -1,0 +1,7 @@
+npm init -y // initializes project as a node project
+
+// downloads typescript into the package.json as a devDependency
+npm i --save-dev typescript
+
+// creates boilerplate tsconfig.json file
+npx tsc --init
