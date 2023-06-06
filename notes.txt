@@ -5,3 +5,14 @@ npm i --save-dev typescript
 
 // creates boilerplate tsconfig.json file
 npx tsc --init
+
+// add "start" script in package.json as
+// --watch will run start after any save automatically
+"start": "tsc --watch"
+
+// to control where TS gets output to js, 
+// inside tsconfig search for outDir and uncomment the line of code
+// and change the ./ dir to ./dest.
+// this will move .js script files to the dest folder
+// now you can remove the script.js that was auto placed with script.ts
+// make sure to add <script src="dest/script.js" defer></script> inside index.html
